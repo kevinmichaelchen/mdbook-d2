@@ -44,9 +44,9 @@ jobs:
       - name: Package artifacts
         run: |
           mkdir release
-          cp $(find artifacts/ubuntu-latest/release -name "sleek-*" -type f) release/sleek-linux
-          cp $(find artifacts/macos-latest/release -name "sleek-*" -type f) release/sleek-macos
-          cp $(find artifacts/windows-latest/release -name "sleek.exe" -type f) release/sleek.exe
+          cp $(find artifacts/ubuntu-latest/release -name "mdbook-d2-*" -type f) release/mdbook-d2-linux
+          cp $(find artifacts/macos-latest/release -name "mdbook-d2-*" -type f) release/mdbook-d2-macos
+          cp $(find artifacts/windows-latest/release -name "mdbook-d2.exe" -type f) release/mdbook-d2.exe
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
